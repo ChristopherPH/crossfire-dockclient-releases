@@ -1,3 +1,57 @@
+## 0.6.0-beta
+### Not released
+**Major Changes & Updates:**
+- Completely rework `Character Panel` with collapsable panels, tooltips
+- Completely rewrite toolbar/menu system for windows
+  - Commands use external command definitions
+  - Menus and toolbars can use external images and command definitions
+  - Prompts for commands can have descriptions
+  - Toolbar settings are saved with the layout
+
+**New Features & Notable Changes:**
+- Reworked `Choose Server Dialog` to look nicer and be more usable
+  - Metaservers are always displayed
+- Message Panel
+  - Cycle through command history with up/down arrows
+  - View Command history with new command `history` and `history [value]`
+- Inventory Panel
+  - Inventory icon overlays for item status
+- Note Panel
+  - Added new command `note [text]` to add and save a note
+- Misc
+  - Changed default layout
+
+**Minor Changes:**
+- Theming
+  - Selected item themeing on lists
+- Layouts
+  - Store listview view/sort/group orders with the layout
+  - Toolbar settings and positions are saved with the layout
+- Character Panel
+  - Add tooltips to stats/labels for additional information
+- Misc
+  - Start to add code licenses to move towards an open source release
+  - Add status form when connecting to a server
+  - Add option to show commands generated from a button/menu item to the message window
+  - Configurable character presets for new character creation (Advanced Options)
+  - Add ability to override client/server versions for connecting to incompatible servers
+  - Add ability to override client version string
+  - Support logging into ancient versions of crossfire
+  - Added new command `listwindows`
+  - Move any saved settings/notes/layouts/etc into a `data subfolder` (portable mode)
+
+**Fixes:**
+- Multicommands can now have a space after the semi-colon
+- Change order of item colour display to have better colourization of items
+- Ensure quests with no parents are still displayed
+- Improved connection handling
+- Fix display issue with mousewheel mapzoom
+- Allow disconnection from the server when in a query dialog
+- Fix race condition that was causing ServerProtocolVersion to be cleared after it was set
+- Tons of minor fixes
+
+---
+
 ## 0.5.0-beta
 ### Nov 26, 2021
 **New Features & Changes:**
