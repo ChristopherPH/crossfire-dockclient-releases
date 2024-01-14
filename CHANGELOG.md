@@ -1,3 +1,11 @@
+## 0.7.8-beta
+### Jan 14, 2024
+
+**Fixes:**
+- `Plugins`: Fix crash when plugin folder doesn't exist
+
+---
+
 ## 0.7.7-beta
 ### Jan 14, 2024
 
