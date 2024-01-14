@@ -1,3 +1,22 @@
+## 0.7.1-beta
+### July 31, 2022
+**New Features & Notable Changes:**
+- Allow `Layouts` to be imported and exported
+- Consolidate and re-organize `Game Settings`
+- Add `Inventory` sorting
+- Add Theming for all listviews, treeviews, listboes
+
+**Minor Changes:**
+- Move `Inventory` filters to drop down menu
+- Save `Inventory` filters and sort options to layout
+- Save option to lock docking
+- Add option to maximize on startup
+- Move Map Window options to main window menu from the options menu
+- Add option to theme a secondary foreground colour, use in inventory and quest windows
+- Improve speed of initial quest window display
+
+---
+
 ## 0.6.0-beta
 ### Not released
 **Major Changes & Updates:**
