@@ -1,3 +1,39 @@
+## 0.7.7-beta
+### Jan 14, 2024
+
+**New Features & Notable Changes:**
+- `Plugins`
+  - External plugins (new panels) can be added via by copying them to the Plugins/ folder
+- `Skills Panel`
+  - Add option to show experience increases and decreases in the message panel
+- `Account Login`
+  - Show options to change the face set and enable/disable darkness for the session
+- `Map Panel`:
+  - Add player info block at the bottom of the window (ranged item/type plus item that would be applied)
+
+**Minor Changes:**
+- `Character Panel`: Show total available item power
+- `Knowledge Panel`: Minor display changes on controls
+- `Hotkey Panel`: Added a multiline string editor for editing commands
+- `Hotkey Panel`: Allow hotkey bar layout to be changed on the fly
+- `Settings`: Added a new multiline string editor for editing commands
+- `Client`: Send the program version as the client version string
+- Increase size of account and character dialogs and slightly adjust control positions
+- Add ability to right click and copy text (with formatting) from messageboxes and lines from the message window to the clipboard
+- Remove extra metadata from messageboxes (date/time, etc)
+- Save listview column widths as part of the saved layout
+- Create an auto-build and auto-package set of scripts
+- Add sample layouts
+
+**Fixes:**
+- `Protocol`: Fix unicode text in item names not displaying properly
+- `Protocol`: Fix sending unicode text to server
+- `Inventory Panel`: Fix being unable to apply next/prev pseudo objects in paged containers
+- `Inventory Panel`: Fix displaying & in container names
+- `Character Panel`: Fix redraw issues when changing panel size
+
+---
+
 ## 0.7.6-beta
 ### October 22, 2023
 
