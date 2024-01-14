@@ -1,3 +1,39 @@
+## 0.5.0-beta
+### Nov 26, 2021
+**New Features & Changes:**
+- Add full *Fog of War* support
+- Allow server message fonts to be changed
+- Allow message window mouse wheel scroll amount to be configurable
+- Rework inventory item display to use displaysize for layouts
+- Rework inventory action menu
+- Speed up message window
+- Popup messages when applying books,cards,paper,monuments,signs
+- Add *character notes window*, to store free-form notes along with the character
+- Add *auto-commands* settings, to run user commands on a new map or on choose player
+- Add new command `usercommands`, `usercommands help` to list new client commands
+- Add new command `echo` to add user information to message window
+- Add option to display extra fog of war around map
+- Increase messagebox default size, and allow resizing via shift-click
+- Allow up/down control to use different increments when using shift/ctrl keys
+- Have up/down control to reset on double-click
+- Add options for how container inventory works (show inline, use new window)
+
+**Fixes:**
+- Fix issues with older servers, such as metalforge
+- Fix many map issues (map scroll, offscreen tiles, fog of war)
+- Show message form if hidden when pressing the ' key
+- Fix loss of formatting and colours in messagewindow when moving around the window
+- Fix lots of strange behaviour with the message window
+- Fix windows not honouring the theme font
+- Set hotkey default keybinds to not use alt modifier
+- Fix player/character window flicker while casting spells
+- Lots of back end refactoring preparing for source code release
+
+**Known Issues:**
+- Multicommands cannot have a space after the semi-colon
+
+---
+
 ## 0.4.0-beta
 ### Nov 11, 2021
 
