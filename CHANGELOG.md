@@ -1,3 +1,39 @@
+## 0.7.5-beta
+### October 21, 2023
+
+**New Features & Notable Changes:**
+- `Inventory Panel`
+  - Add find toolbar (simple or regex) to highlight / find inventory items
+- `Knowledge Panel`
+  - Add filter toolbar (simple or regex) to filter knowledge
+- `Keybind Panel`
+  - Add themeing, grouping, sorting
+  - Additional changes for a better user experience
+- `MiniMap Panel`
+  - Displays current map in its entirety
+  - Saves current map on a map change
+  - Experimental: Allows saved maps to be manually merged into current map
+- Support skill descriptions (requires server commit 38c711ccdb @ March 18 2023)
+
+**Minor Changes:**
+- `Knowledge Panel`: Add sort options
+- `Character Panel`: Change bar colours to enhance readability
+- `Ground Panel`: Add toolbar settings for new find toolbar
+- `Container Panel`: Add toolbar settings for new find toolbar
+- `Theme Settings`: Add secondary colour, secondary font, list highlight colour
+- Support tilesets other than 32x32
+- Add MapDataManager for handling map updates (Currently used by MiniMap)
+
+**Fixes:**
+- Load default layout if overridden default layout is not found
+- Properly convert UTF strings from server
+- Fix focus issues when closing formatted message boxes
+- Fix issue displaying metaservers when a single metaserver is unavailable
+- Fix display issue on skill large icon view
+- Fix default sorting on listviews
+
+---
+
 ## 0.7.3-beta
 ### March 07, 2023
 **New Features & Notable Changes:**
