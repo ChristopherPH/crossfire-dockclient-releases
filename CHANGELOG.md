@@ -1,3 +1,29 @@
+## 0.7.3-beta
+### March 07, 2023
+**New Features & Notable Changes:**
+- Add command auto-completion
+- Add `Dungeon Master` panel with most of the DM commands
+- Add new `Inventory` actions to prompt for number of items to pick up/drop
+- Add command line arguments to set:
+  - DataFolder (-d <folder>)
+  - Portable mode (-p)
+- DataFolder defaults to %APPDATA%\Crossfire DockWindow Client
+
+**Minor Changes:**
+- `Keybind Panel` shows list of all available commands to help with binding
+- Add ctrl-backspace to clear command entry, but still keep focus
+  - As opposed to escape, which clears the entry and removes focus
+- Add icons to some commands
+- Enhance `Character Creation` dialog
+  - Add colours to stat points to indicate if they are out of range
+  - Update error messages and add tooltips
+
+**Fixes:**
+- Fix issue using host:ip format when connecting to private servers
+- Fix issue where items without a group name are not displayed
+
+---
+
 ## 0.7.2-beta
 ### Feb 08, 2023
 **New Features & Notable Changes:**
