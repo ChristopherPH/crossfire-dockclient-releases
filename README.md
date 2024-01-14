@@ -1,4 +1,4 @@
-# Crossfire DockWindow Client
+# Crossfire DockWindow Client (DockClient)
 
     WARNING! This software is NOT SUPPORTED and NOT ENDORSED
              by the official Crossfire project or Crossfire 
@@ -17,7 +17,7 @@ How to Play Crossfire:
 - http://crossfire.real-time.com/guides/
 - http://crossfire.real-time.com/guides/handbook/index.html
 
-## History of Cloak's Crossfire DockWindow Client
+## Brief History of the Crossfire DockWindow Client
 I first found Crossfire around 2009, and played for quite some time on a private server. In 2021, I came back to play again after a number of years of not playing, and found the game and interface wasn't super friendly to new players. All in all, I found the interface and control schemes pretty confusing with the mix of a GUI and text commands.
 
 I remembered I wanted to write my own client back in 2009 just to see if I could, and lately I felt that I needed a new project project, so I figured I'd try to come up with something that might be a little easier to use for new or beginner players.
