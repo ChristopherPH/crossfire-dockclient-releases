@@ -1,3 +1,11 @@
+## 0.7.6-beta
+### October 22, 2023
+
+**Fixes:**
+- Fix display issues on MiniMap panel on maps larger than 50x50
+
+---
+
 ## 0.7.5-beta
 ### October 21, 2023
 
