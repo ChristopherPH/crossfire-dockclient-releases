@@ -1,3 +1,16 @@
+## 0.7.2-beta
+### Feb 08, 2023
+**New Features & Notable Changes:**
+- Fix some issues where grouping didn't work properly
+
+**Minor Changes:**
+- Add numeric column sorting to `Spells` and `Skills` panels
+- Clean up grouping on `Skills` panel
+- Enhance `Character` panel: Stat colours, DPS display, update some tooltips and labels
+- Update some help text
+
+---
+
 ## 0.7.1-beta
 ### July 31, 2022
 **New Features & Notable Changes:**
