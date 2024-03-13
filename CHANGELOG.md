@@ -1,3 +1,92 @@
+## Crossfire DockWindow Client v0.8.0
+### Mar 13, 2024
+
+> - First Public Release!
+> - 225 commits since last release!
+
+
+**New Features & Notable Changes:**
+- `Main Window`
+  - Add a QuickKey Toolbar to main window
+  - Rework menu items
+    - Add Theme settings under Options Menu
+    - Split Panels menu on main window into Player, Items, Info, Map, Extra menus
+    - Rework Layout menu for a better experience
+- `Inventory Panel`
+  - Add moving items between inventory/ground/open containers via dragging and dropping
+  - Add using an item with another via dragging and dropping (player inventory panel only)
+- `QuickKeys`
+  - Allow spells, skills, inventory items, and selected message text to be dragged then dropped onto a QuickKey/Hotkey button
+  - Update HotKeys Panel to use new QuickKey system
+- `Character Panel`
+  - Add saving current equipment set to a QuickKey
+  - Add menu to change stat panel sizes
+- `Choose Server Dialog`
+  - Show official server at the top of the list, with a star icon
+- `Login Dialog`
+  - Saved passwords are now encrypted instead of being saved in plain text
+  - Changed Save Password option from a global setting to a server setting
+  - Show connected server
+- `Theme`
+  - Split out theme configuration from settings
+    - `BREAKING CHANGE`: This change will cause all existing theme related to be lost
+  - Add ability to import and export theme
+- `Settings`
+  - Add ability to import and export settings, player settings
+  - Save QuickKeys/Hotkeys per character instead of globally
+    - `BREAKING CHANGE`: This change will cause all existing saved hotkeys to be lost
+  - Change names of various global / client settings filenames
+    - `BREAKING CHANGE`: This change will cause old settings to not be loaded, although the files can be renamed
+    - default.layout -> crossfireclient.layout
+    - global.keys -> crossfireclient.keys
+    - recent.xml -> crossfireclient.serverlist
+    - settings.xml -> crossfireclient.settings
+  - Move some settings from one settings page to another
+    - `BREAKING CHANGE`: This change will cause these settings to be lost
+    - Auto-Commands: OnChoosePlayer, OnChooseMap,
+    - Server Fonts: Fixed, Arcane, Handwriting, Strange
+    - Message Colours
+  - Rename Game Windows to Game Panels. This was a major refactor of file locations, file names, class names, namepsace names
+    - `BREAKING CHANGE`: This change will cause some settings pages to be reset to defaults (Map, Message, Notes)
+- `Plugins` -> `IRC`
+  - Add experimental IRC plugin (under Extra menu when installed)
+    - To install, copy Plugins\IRC\*.dll to <InstallDir>\Plugins\ or <PortableDir>\Plugins\
+
+**Minor Changes:**
+- `All Panels`: Change command menu icon to a hamburger menu
+- `All Panels`: Right click on a panel bar brings up both settings and theme options for the panel
+- `Character Panel`: Add unequip menu item
+- `Character Panel`: Many minor adjustments for a better experience
+- `Character Panel`: Show spell stats as multiple items
+- `Dialogs`: Increase size of link labels
+- `Inventory Panel`: Adjust default settings for to showcase available options
+- `Item Manager`: Minor speed improvements when adding and searching for items
+- `Keybinds`: Adjust default settings for to showcase available options
+- `Knowledge Panel`: Adjust default settings for to showcase available options
+- `Layouts`: Saved layouts now have a .cfx-layout extension
+- `Main Window`: Improve many error and warning messages
+- `Main Window`: Settings dialog now contains panel settings
+- `Message Box`: Add configuration to change default popup message size
+- `Message Panel`: Many minor adjustments for a better experience
+- `Minimap Panel`: Highlight player on mini-map
+- `Settings`: Rename many settings group names for clarity and consistency
+- `Theme`: Add an example theme that can be imported
+- `Theme`: Adjust default settings for a better initial experience
+
+**Fixes:**
+- `Character Panel`: Fix some minor theming issues on labels
+- `Login Dialog`: Ensure faceset selection is based on ID, not order of facesets
+- `Message Panel`: Fix issue displaying curly braces and backslashes
+
+**Known Issues:**
+- `Inventory Panel`: Listbox smooth scroll temporarily re-appears when the inventory panel re-gains focus via clicking on the scroolbar, then scrolling the listbox with the mousewheel.
+  - Clicking on the listbox item instead of the scrollbar does not have this problem.
+- `Inventory Panel`: Working with items in the container game panel is very slow (#64)
+  - When items in an open container are removed, the server clears and resends all the contained items
+- `Main Window`: Can't Use ESC key to close floating windows until it gets focus (#2)
+
+---
+
 ## 0.7.8-beta
 ### Jan 14, 2024
 
@@ -88,6 +177,7 @@
 
 ## 0.7.3-beta
 ### March 07, 2023
+
 **New Features & Notable Changes:**
 - Add command auto-completion
 - Add `Dungeon Master` panel with most of the DM commands
@@ -114,6 +204,7 @@
 
 ## 0.7.2-beta
 ### Feb 08, 2023
+
 **New Features & Notable Changes:**
 - Fix some issues where grouping didn't work properly
 
@@ -127,6 +218,7 @@
 
 ## 0.7.1-beta
 ### July 31, 2022
+
 **New Features & Notable Changes:**
 - Allow `Layouts` to be imported and exported
 - Consolidate and re-organize `Game Settings`
@@ -146,6 +238,7 @@
 
 ## 0.6.0-beta
 ### Not released
+
 **Major Changes & Updates:**
 - Completely rework `Character Panel` with collapsable panels, tooltips
 - Completely rewrite toolbar/menu system for windows
@@ -200,6 +293,7 @@
 
 ## 0.5.0-beta
 ### Nov 26, 2021
+
 **New Features & Changes:**
 - Add full *Fog of War* support
 - Allow server message fonts to be changed
@@ -265,6 +359,7 @@
 
 ## 0.3.0-beta
 ### Nov 07, 2021
+
 **New Features:**
 - Configurable Hotkey bar
 - A magic map that shows walls
