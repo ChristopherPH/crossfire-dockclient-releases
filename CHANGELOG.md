@@ -1,3 +1,40 @@
+## Crossfire DockWindow Client v0.8.1
+### April 11, 2024
+
+**New Features & Notable Changes:**
+- `Main Window`
+  - Add (and move) server commands to main window toolbar
+  - Add server help to main window menu
+- `Gameplay`
+  - Add option to inhibit applying items from containers
+- `Map Panel`
+  - Add ability to configure scaling algorithm
+- `Message Panel`
+  - Add ability to configure message filters per message panel
+  - Add alternate message panel
+- `Pickup Panel`
+  - Add saving pickup value and pickup commands to a QuickKey
+- `Spell Panel`
+  - Add theme settings for highlighting attuned/repelled/denied spells
+- `Plugins` -> `IRC`
+  - Add IRC text colour and text formatting
+
+**Minor Changes:**
+- `Settings`: Minor moving and renaming settings and settings groups for ease of use and discoverability
+- `Knowledge Panel`: Add options to change mouse wheel scrolling behaviour
+- `Commands`: Update some command definitions
+- `Choose Player Dialog`: Show connected server
+- `Create Player Dialog`: Show connected server
+- `MiniMap Panel`: Set graphics scaling modes to high speed
+- `Pickup Panel`: Add pickup help and commands to context menu
+
+**Fixes:**
+- `Game Panels`: Fix issue where custom game panel context menus were not shown
+- `Game Panels`: Fix issue where Configure Toolbar option was not shown on panel context menus
+- `Inventory Panel`: Fix display size not working after re-org of settings (introduced in 0.8.0)
+
+---
+
 ## Crossfire DockWindow Client v0.8.0
 ### Mar 13, 2024
 
