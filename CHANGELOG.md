@@ -1,3 +1,34 @@
+## Crossfire DockWindow Client v0.8.2
+### April 20, 2024
+
+**New Features & Notable Changes:**
+- `Keybinds`
+  - Add ability to have keybinds with multiple modifiers
+  - Move default keybinds to game data to allow new keybinds to be added with new releases
+    - Note that default keybinds are application level, and are separate from global/character keybinds
+- `Message Panel`
+  - Add ability to set command repeat (used for dimension door)
+  - Add localcommands _setrepeat_ and _addrepeat_ to set repeat via a hotkey
+- `Notes Panel`
+  - Add ability to zoom the text of the notes panel
+- `Resistance Panel`
+  - Add new panel for displaying character resistances
+
+**Minor Changes:**
+- `Character Panel`: Add description indicating stat highlighting can be disabled
+- `Inventory Panel`: Refocus map when pressing ESC from inventory toolbar controls
+- `Spell Panel`: Allow spell attune/repel/deny highlighting to be disabled
+- `Spell Panel`: Add explicit commands to invoke spells with an argument
+- `Message Panel`: Clean up message type descriptions, fix spelling and case
+
+**Fixes:**
+- `Main Window`: Reset a game panel if the loaded layout does not include that panel
+- `Main Window`: Update about box with contact information
+- `MiniMap Panel`: Don't draw null maps
+- `Item Manager`: Fix crash where server adds an item that already exists, but none of the item properties changed
+
+---
+
 ## Crossfire DockWindow Client v0.8.1
 ### April 11, 2024
 
