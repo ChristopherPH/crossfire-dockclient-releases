@@ -1,3 +1,57 @@
+## Crossfire DockWindow Client v0.8.3
+### May 29, 2024
+
+**New Features & Notable Changes:**
+- `Inventory Panel`
+  - Change find toolbar to be toggled on/off via a toolbar button, to reduce toolbar size
+- `Message Panel`
+  - Drastically improve message redraw times when many messages come in at the same time
+  - Use the scrollbar position to determine if new messages should scroll the message panel
+  - Add option to always scroll the message panel, regardless of scroll position
+- `MiniMap Panel`
+  - Drastically improve mini-map redraw times
+- `Map Panel`
+  - Drastically improve darkness rendering speed
+  - Add Player and Communication Labels
+  - Add label theme options
+- `Themes`
+  - Main Window/Toolbar Theme can be changed without a restart
+  - Add new theme "Parchment", update "Dark" theme
+- `Protocol`
+  - Support protocol version 1030
+
+**Minor Changes:**
+- `Character Panel`: Minimize calls to update the UI as much as possible
+- `Inventory Panel`: Minimize calls to update the UI as much as possible
+- `Inventory Panel`: Add different apply choices when dropping an item on to a quick key
+- `Inventory Panel`: Add apply -o command to context menu
+- `Inventory Panel`: Move player weight from toolbar to titlebar, to reduce toolbar size
+- `Map Panel`: Minimize calls to update the UI as much as possible
+- `Map Panel`: Add option to render Fog of War as Sepia instead of GrayScale
+- `Message Panel`: Copy hyperlinks to clipboard on click
+- `MiniMap Panel`: Add player and viewport highlighting as an option
+- `Main Window`: Load main window menu and toolbar layouts from game data
+- `Main Window`: Minor re-org of toolbar display
+- `Settings`: Add options to enable admin, experimental, secondary, and debug panels
+- `Core`: Add performance monitor while in debug mode to help improve the overall experience
+
+**Fixes:**
+- `MiniMap Panel`: Fix player dash offset animation stopping when left running for a long time
+- `Skill Panel`: Re-align skills when a new skill is added
+- `Spell Panel`: Re-align spells when a new spell is added
+- `Commands`: Fix missing help commands (death, mode, move)
+- `Core`: Add some protections arround accessing the underlying array of an Expanding2DArray
+- `Core`: Ensure & are displayed in formatted message boxes
+- `Protocol`: Work around skill_extra not existing on older servers
+- `Themes`: Change how colours are written to settings to avoid settings loss
+- `Core`: Fix potential crash on exit
+
+**Hacks:**
+- `Message Panel`: Scroll to end of messages during panel resize
+  - This avoids issues where the scroll position changes and scrolling does not occur
+
+---
+
 ## Crossfire DockWindow Client v0.8.2
 ### April 20, 2024
 
