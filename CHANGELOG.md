@@ -1,3 +1,46 @@
+## Crossfire DockWindow Client v0.8.4
+### June 28, 2024
+
+> - Map Rewrite Release
+> - Over 100 map related commits in this release!
+
+**New Features & Notable Changes:**
+- `Message Panel`
+  - Add configuration option to limit the number of messages in the message panel
+- `Map Panel`
+  - Re-implement map data storage for faster access
+    - Map no longer grinds to a halt when containing lots of fog of war information
+  - Re-implement map drawing routines to simplify and speed up map updates
+  - Add new map viewport options
+    - Custom viewport sizes
+    - Map zoom (scale factor)
+  - Add new map display options
+    - Fog of war colour schemes
+    - Darkness dark factor
+  - Zoom in and out works without changing the map size and losing map data
+- `Protocol`
+  - Move mapsize protocol level configuration to server settings
+    - The mapsize protocol value is now independent of the map display, and will default to the largest available mapsize unless explicitly set to a fixed size
+
+**Minor Changes:**
+- `Knowledge Panel`: Bind middle click to attempt alchemy
+- `Map Panel`: Default map scale algorithm to nearest-neighbour make display more pixelated
+- `Map Panel`: Default map fog of war style to sepia to highlight fog of war vs darkness
+- `Map Panel`: Add new local command _mapzoom_ to set zoom / scale factor
+- `Map Panel`: Add new local command _mapzoomreset_ to reset zoom back to 100%
+- `MiniMap Panel`: As the minimap panel now shares drawing code with the map panel, all map related enhancements are available to the minimap
+- `MiniMap Panel`: Center minimap on player when minimap gets too large to display
+
+**Fixes:**
+- `Character Panel`: Fix issue displaying X-Ray status
+- `Inventory Panel`: Fix crash when performing action on unselected item
+- `MiniMap Panel`: Fix issue where minimap dissapears when it is too large
+- `Animations`: Fix issue not animating random synchonized animations
+- `Main Window`: Fix crash performing layout
+- `Themes`: Update hard to read message text colour on parchment theme
+
+---
+
 ## Crossfire DockWindow Client v0.8.3
 ### May 29, 2024
 
