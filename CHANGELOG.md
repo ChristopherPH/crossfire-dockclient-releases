@@ -1,3 +1,21 @@
+## Crossfire DockWindow Client v0.8.5
+### July 13, 2024
+
+**Fixes:**
+- `Message Panel`: Fix occasional client deadlock when adding messages to message panel
+- `Main Window`: Display game panel load errors on startup
+- `Main Window`: Don't stop loading game panels after first game panel load failure
+- `Main Window`: Fix race condition where server login screen occasionally fails to display
+- `Game Panels`: Fix null references that appear when using different OS and .NET versions
+
+**Minor Changes:**
+- `Message Panel`: Add button to scroll to end of messages
+- `Message Panel`: Scroll to end of message when changing font size
+- `Layouts`: Include layouts inside setup project
+- `Themes`: Include themes inside setup project
+
+---
+
 ## Crossfire DockWindow Client v0.8.4
 ### June 28, 2024
 
