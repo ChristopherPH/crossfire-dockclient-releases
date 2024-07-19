@@ -1,3 +1,32 @@
+## Crossfire DockWindow Client v0.8.6
+### July 19, 2024
+
+**New Features & Notable Changes:**
+- `Map Panel`
+  - Implement smoothing of face corners
+    - Note that smoothing is still marked as experimental, as there are some performance issues with larger viewports
+- `MiniMap Panel`
+  - Speed up minimap render times when minimap contains a lot of map information
+- `Plugins` -> `Discord`
+  - Add experimental Discord Rich Presense plugin (under Options->Settings->Discord when installed)
+    - To install, copy Plugins\Discord\*.dll to <InstallDir>\Plugins\ or <PortableDir>\Plugins\
+
+**Fixes:**
+- `Inventory Panel`: Fix issue with drag and drop not triggering when only moving the mouse horizontally or vertically
+- `Map Panel`: Fix draw order issue with multi-tile faces being drawn underneath faces on the same layer
+- `Map Panel`: Many smoothing related fixes
+- `Command/Inventory/Quest Panels`: Ensure text is always displayed regardless of theme font size
+- `Account/Player/Server Dialogs`: Ensure text is always displayed regardless of theme font size
+- `Core`: Fix minor issue generating RTF text for message panel
+
+**Minor Changes:**
+- `Knowledge Panel`: Ensure text displays ... when there is more text to display
+- `MiniMap Panel`: Make minimum tile size configurable
+- `Account Dialog`: Remove darkness protocol override (darkness is configurable via the map settings)
+- `Core`: Add ability to create plugins that don't have an associated Game Panel
+
+---
+
 ## Crossfire DockWindow Client v0.8.5
 ### July 13, 2024
 
