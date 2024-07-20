@@ -1,5 +1,5 @@
-## Crossfire DockWindow Client v0.8.6
-### July 19, 2024
+## Crossfire DockWindow Client v0.8.7
+### July 20, 2024
 
 **New Features & Notable Changes:**
 - `Map Panel`
@@ -15,6 +15,7 @@
 - `Inventory Panel`: Fix issue with drag and drop not triggering when only moving the mouse horizontally or vertically
 - `Map Panel`: Fix draw order issue with multi-tile faces being drawn underneath faces on the same layer
 - `Map Panel`: Many smoothing related fixes
+- `Map Panel`: Auto adjust text colour of status labels to maintain a good contrast with the background colour
 - `Command/Inventory/Quest Panels`: Ensure text is always displayed regardless of theme font size
 - `Account/Player/Server Dialogs`: Ensure text is always displayed regardless of theme font size
 - `Core`: Fix minor issue generating RTF text for message panel
