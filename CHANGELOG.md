@@ -1,3 +1,22 @@
+## Crossfire DockWindow Client v0.8.8
+### July 26, 2024
+
+**Fixes:**
+- `Character Panel`: Fix setting wrong item power label when level changes
+- `Map Panel`: Fix issue where fog of war could not be disabled
+- `Map Panel`: Fix issue where moving multi-tile images may not be fully re-drawn, resulting in random parts of the multi-tile being left on the display
+- `Map Manager`: Fix issue where map cells were not always flagged as FOW cells when the viewport scrolled, resulting in multi-tile images being drawn when they don't exist
+- `Map Manager`: Update logic to consistently clear OOB and FOW cells when they come back into view, to avoid multi-tile images being drawn when they don't exist
+
+**Minor Changes:**
+- `Inventory Panel`: Update tooltip for item number counter (was Take/Drop) for clarity
+- `Map Panel`: Allow fog of war data to be drawn without a style
+- `Skill Panel`: Add more information to skill increase/decrease messages
+- `Main Window`: Add links to crossfire atlas and wiki in help menu
+- `Docs`: Update changelog format as it was getting flagged as a script malware
+
+---
+
 ## Crossfire DockWindow Client v0.8.7
 ### July 20, 2024
 
@@ -9,7 +28,9 @@
   - Speed up minimap render times when minimap contains a lot of map information
 - `Plugins` -> `Discord`
   - Add experimental Discord Rich Presense plugin (under Options->Settings->Discord when installed)
-    - To install, copy Plugins\Discord\*.dll to <InstallDir>\Plugins\ or <PortableDir>\Plugins\
+    - Plugin Location: Plugins\Discord
+    - To install a plugin, copy all the files inside a plugin location to the Crossfire DockClient Plugin directory
+      - (eg: <InstallDir>\Plugins\ or <PortableDir>\Plugins\)
 
 **Fixes:**
 - `Inventory Panel`: Fix issue with drag and drop not triggering when only moving the mouse horizontally or vertically
@@ -263,7 +284,9 @@
     - `BREAKING CHANGE`: This change will cause some settings pages to be reset to defaults (Map, Message, Notes)
 - `Plugins` -> `IRC`
   - Add experimental IRC plugin (under Extra menu when installed)
-    - To install, copy Plugins\IRC\*.dll to <InstallDir>\Plugins\ or <PortableDir>\Plugins\
+    - Plugin Location: Plugins\IRC
+    - To install a plugin, copy all the files inside a plugin location to the Crossfire DockClient Plugin directory
+      - (eg: <InstallDir>\Plugins\ or <PortableDir>\Plugins\)
 
 **Minor Changes:**
 - `All Panels`: Change command menu icon to a hamburger menu
