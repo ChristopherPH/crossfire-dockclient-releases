@@ -1,12 +1,14 @@
 # Crossfire DockWindow Client (DockClient)
 
-    WARNING! This software is NOT SUPPORTED and NOT ENDORSED
-             by the official Crossfire project or Crossfire 
-             developers!
+> Please note that this software is NOT SUPPORTED by the official Crossfire project or Crossfire developers.
+>
+> Support requests, bug reports, general questions and comments should be 
+directed to **@RetroCloak** on the Crossfire Discord / IRC or on the project
+issue tracker.
 
-This is an **unofficial** game client for **Crossfire: The Multiplayer Adventure Game**
+This is yet another game client for **Crossfire: The Multiplayer Adventure Game**
 
-**Official** clients can be found at:
+**Officially Supported** clients can be found at:
 - http://crossfire.real-time.com/clients/index.html
 
 More information about Crossfire:

@@ -1,3 +1,49 @@
+## Crossfire DockWindow Client v0.8.9
+### Sept 10, 2024
+
+**New Features & Notable Changes:**
+- `Inventory Panel`
+  - Add tooltips to inventory items showing all available item information
+  - Change up how items are displayed
+    - Add option to display the type of the item (client type), disabled by default
+    - Display item properties (flags) as icons instead of text (with an option to display text instead)
+    - Make positions of property icons configurable (beside name, icon overlay, hidden)
+  - Add subfiltering of the player inventory by the type of item (client type)
+  - Change default configuration to disable _Inline Contained Items_
+- `Core`
+  - Rename executable from Crossfire.exe to CrossfireRPG.exe
+    - This is to avoid incorrect discord game detection
+    - The filename will likely change again in the future
+  - Add _ClientTypes.xml_ data file for configuring client types
+
+**Fixes:**
+- `Character Panel`: Don't show open containers on the ground in the equipment list
+- `Inventory Panel`: Don't display contained items when container is filtered
+- `Inventory Panel`: Fix issue displaying inline items when container first opens
+- `Inventory Panel`: Fix issue where locking and unlocking an open container will show an empty container
+- `QuickKeys`: Debounce QuickKeys (don't send quick key commands while already waiting on the same command)
+- `Discord Plugin`: Fix crash when Discord becomes unavailable while the DockWindow Client is open
+
+**Minor Changes:**
+- `Inventory Panel`: Add option to filter player inventory on items that have been read
+- `Inventory Panel`: Add option to sort items by weight (desc)
+- `Inventory Panel`: Add option to display an icon for items that have been read
+- `Inventory Panel`: Add new icons to context menu
+- `Inventory Panel`: Allow multiple font styles on inventory item font style settings
+- `Inventory Panel`: Don't wrap the item name when using tiny, small, or medium icon display sizes
+- `Inventory Panel`: Update initial display settings to show read items with a strikethrough font
+- `Inventory Panel`: Rework initial display settings for item property icons
+- `Inventory Panel`: Warn instead of emptying container when container is readied and user tries to drop container
+- `Themes`: Change colour of applied and unidentified items on parchment theme
+- `Discord Plugin`: Add more options to customize discord activity display
+
+**Additional Notes:**
+
+This release contains a large refactor where part of the codebase was split into external repositories and then included as submodules. It is possible that additional issues have crept in as a result of this split.
+
+---
+
+
 ## Crossfire DockWindow Client v0.8.8
 ### July 26, 2024
 
