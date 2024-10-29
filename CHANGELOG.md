@@ -1,3 +1,26 @@
+## Crossfire DockWindow Client v0.8.10
+### Oct 29, 2024
+
+**New Features & Notable Changes:**
+- `Welcome Dialog`
+  - Add welcome screen on startup
+- `Docs`
+  - Add beginnings of DockClient Manual to readme
+
+**Fixes:**
+- `Map Panel`: Ensure DM and Party labels show on map
+- `Core`: Fix potential wrong colours when displaying crossfire markup text
+
+**Minor Changes:**
+- `Inventory Panel`: Add 'Apply and Open' context menu
+- `Create Player Dialog`: Minor quality of life improvements
+- `Themes`: Adjust label theme defaults to highlight admins/party members
+- `Installer`: Add ability to install plugins from the installer
+- `Discord Plugin`: Enable Discord Integration by default
+- `Core`: Minor re-work how crossfire markup text is displayed in messageboxes, dialogs and the message panel
+
+---
+
 ## Crossfire DockWindow Client v0.8.9
 ### Sept 10, 2024
 
@@ -42,7 +65,6 @@
 This release contains a large refactor where part of the codebase was split into external repositories and then included as submodules. It is possible that additional issues have crept in as a result of this split.
 
 ---
-
 
 ## Crossfire DockWindow Client v0.8.8
 ### July 26, 2024
