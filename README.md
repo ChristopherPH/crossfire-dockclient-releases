@@ -1,4 +1,4 @@
-# Crossfire DockWindow Client (DockClient)
+# Crossfire RPG DockWindow Client (DockClient)
 
 > Please note that this software is NOT SUPPORTED by the official Crossfire project or Crossfire developers.
 >
@@ -20,7 +20,7 @@ How to Play Crossfire:
 - http://crossfire.real-time.com/guides/handbook/index.html
 
 
-## Brief History of the Crossfire DockWindow Client
+## Brief History of the Crossfire RPG DockWindow Client
 I first found Crossfire around 2009, and played for quite some time on a private server. In 2021, I came back to play again after a number of years of not playing, and found the game and interface wasn't super friendly to new players. All in all, I found the interface and control schemes pretty confusing with the mix of a GUI and text commands.
 
 I remembered I wanted to write my own client back in 2009 just to see if I could, and lately I felt that I needed a new project project, so I figured I'd try to come up with something that might be a little easier to use for new or beginner players.
@@ -67,7 +67,7 @@ I remembered I wanted to write my own client back in 2009 just to see if I could
 	- Small install size (~2mb)
 
 
-## Crossfire DockWindow Client Manual
+## Crossfire RPG DockWindow Client Manual
 
 ### Game Panels
 
@@ -151,7 +151,7 @@ Client settings are stored by default in the `%APPDATA%\Crossfire DockWindow Cli
 
 
 ### Portable Mode
-Instead of using the _Crossfire DockWindow Client installer_ to install the client and plugins, the Crossfire DockWindow Client can be started in a portable mode via the `-p` command line parameter, or by running the `portable.bat` batch file. Running in portable mode will create and save any client settings to a `Data` sub-directory where the `CrossfireRPG.exe` file exists.
+Instead of using the _Crossfire DockWindow Client installer_ to install the client and plugins, the Crossfire DockWindow Client can be started in a portable mode via the `-p` command line parameter, or by running the `portable.bat` batch file. Running in portable mode will create and save any client settings to a `Data` sub-directory where the `CrossfireRPG.DockClient.exe` file exists.
 
 Note that the portable directory does not include any plugins by default. Plugins can be installed to a portable installation as documented below, and will need to be upgraded (or removed) with each new client version.
 
@@ -160,7 +160,7 @@ Note that the portable directory does not include any plugins by default. Plugin
 Supported plugins can be installed/upgraded using the _Crossfire DockWindow Client installer_. If plugins need to be installed manually, a plugin can be installed by copying all the files inside a plugin location to the Crossfire DockClient `Plugins` directory. This directory may need to be created
 
 Manual installation steps:
-1. Create a sub-directory named `Plugins` where the `CrossfireRPG.exe` file exists
+1. Create a sub-directory named `Plugins` where the `CrossfireRPG.DockClient.exe` file exists
 2. Copy dlls and datafiles from inside the plugin location (eg. `Plugins\PluginName`) and place them in the `Plugins` sub-directory
 
 **NOTE:** Some plugins may be experimental, and require that experimental game panels are enabled in the client settings.
@@ -168,7 +168,7 @@ Manual installation steps:
 
 ### Command Line Options
 ```
-CrossfireRPG.exe [-h] | [-p] | [-d <DataFolder>]
+CrossfireRPG.DockClient.exe [-h] | [-p] | [-d <DataFolder>]
 
   -h                        Shows help
   -p                        Portable Mode (saves settings to <PortableDir>\Data)

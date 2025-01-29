@@ -1,3 +1,60 @@
+## Crossfire DockWindow Client v0.8.11
+### Jan 28, 2025
+
+**New Features & Notable Changes:**
+- `Core`
+  - Rename executable from CrossfireRPG.exe to CrossfireRPG.DockClient.exe
+- `Quest Panel`
+  - Add expandable Quest Details section underneath Quest List
+- `Keybinds`
+  - Allow modifier keys (Fire|Run|Alt) to be remapped (manual config file edit required)
+  - Add button to capture keybind key and modifiers when adding/editing keybinds
+  - Clarify messaging and functionality around how default keybinds are edited/disabled
+  - Add categories to default keybinds, add sorting/grouping by category in keybind panel
+
+**Fixes:**
+- `Keybind Panel`: Remove flicker on resize
+- `Keybind Panel`: Don't allow character keybinds when there is no valid player
+- `Message Panel`: Fix issue with changing zoom when initial zoom is 100%
+- `Message/Notes Panel`: Fix font size issues when theme font changes or panel is reloaded
+- `Message/Notes Panel`: Fix crash when setting out of range zoom values
+- `Pickup Panel`: Fix missing "bind pickup" right click context menu items
+- `Quest Panel`: Fix occasional missing subquests
+- `Quest Panel`: Remove flicker on resize
+- `IRC Plugin`: Fix font size issues when theme font changes or panel is reloaded
+- `IRC Plugin`: Fix crash when setting out of range zoom values
+- `Character/Inventory/Knowledge Panels`: Remove flicker when redrawing list items
+- `Server/Player Dialogs`: Remove flicker from hottracking list items
+- `Core`: Fix issue where during load, a theme update was triggered multiple times
+- `Core`: Fix issue where during load, settings updates were triggered multiple times
+- `Core`: Fix occasional crash during login, when loading QuickKeys
+- `Core`: Fix issue where the theme was not properly being applied to gamepanels, resulting in missing themed elements when the gamepanel was undocked
+
+**Minor Changes:**
+- `Character Panel`: Move item power to inside Equipped Items section header
+- `Character Panel`: Show weapon improvements in Other Stats
+- `Character Panel`: Adjust column widths for resistances and other stats sections
+- `Keybind Panel`: Theme the keybind edit popup form
+- `Knowledge Panel`: Move knowledge search command to main toolbar, add icon
+- `Message Panel`: Add option for zoom factor on popup messages
+- `Message/Notes Panel`: Change zoom factor to be a percent
+- `Pickup Panel`: Change clear all checkbox into a button [mlheur]
+- `Quest Panel`: Add tooltips to quest filters
+- `Quest Panel`: Add ability to configure quest list information
+- `Quest Panel`: Rework how replayable quests are filtered
+- `IRC Plugin`: Change zoom factor to be a percent
+- `Themes & Layouts`: Add RetroCloak layout, add Kettek layout and theme
+- `Settings`: Add Gameplay Tweak: Allow or inhibit player from dropping items beside an open ground container
+- `Settings`: Add Gameplay Tweak: Allow or inhibit player from picking up an item from the ground beside an open ground container
+- `Settings`: Add Gameplay Tweak: Allow or inhibit player from emptying a readied/open container by dropping it
+
+**Additional Notes:**
+
+This release contains a large refactor where the namespaces of the entire codebase were re-organized.
+It is possible that additional issues have crept in as a result of this refactor.
+
+---
+
 ## Crossfire DockWindow Client v0.8.10
 ### Oct 29, 2024
 
