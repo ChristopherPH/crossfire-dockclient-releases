@@ -1,4 +1,50 @@
-## Crossfire DockWindow Client v0.8.11
+## CrossfireRPG DockWindow Client v0.8.12
+### March 03, 2025
+
+**New Features & Notable Changes:**
+- `Map Panel` / `MiniMap Panel`
+  - Incorporate Magic Map into map drawing
+- `Keybind Panel`
+  - Add ability to drag/drop onto "add keybind" buttons to create keybind
+  - Allow existing keybinds to be updated via a drag/drop operation
+  - Add ability to append to keybinds via drag/drop operation
+  - Add ability to edit commands using multi-line editor
+  - Auto prompt for key when adding keybind via localcommand
+  - Add local commands bind_global, bind_character
+- `Message Panel`
+  - Add experimental option to enable auto-complete suggestion popup
+  - Add placeholder text to command bar
+- `QuickKeys`
+  - Add ability to append to quickkeys via drag/drop operation
+- `Network`
+  - Support IPV6
+
+**Fixes:**
+- `Keybind Panel`: Fix italicise of command column when keybind uses edit mode
+- `Pickup Panel`: Fix wrong pickup command generated for drag/drop
+- `Main Form`: Fix incorrect panel widths when loading first layout
+- `Core`: Fix issue where excess commands were sent to the server, when firing using shift + numberpad
+  - Note: This caused a backlog of commands on the server, stopping the player from being able to send different commands in a timely manner
+
+**Minor Changes:**
+- `Character Panel`: Move item power to inside Equipped Items section header
+- `Keybind/Resistance/Skill/Spell Panel`: Add option to auto-resize all columns
+- `QuickKeys`: Increase edit window font size
+- `Core`: Add knowledge related drag/drop operations
+- `Core`: Update item/skill/spell related choice text in drag/drop operations
+- `Core`: Minor updates to messaging command text
+
+---
+
+## CrossfireRPG DockWindow Client v0.8.11.3
+### Jan 28, 2025
+
+**Fixes:**
+- `Installer`: Fix incorrect target location of detected dependancies
+
+---
+
+## CrossfireRPG DockWindow Client v0.8.11
 ### Jan 28, 2025
 
 **New Features & Notable Changes:**
